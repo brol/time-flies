@@ -1,3 +1,10 @@
+v1.6 - 04-11-2017 - Pierre Van Glabeke
+* modifs css et html
+* modifs localisation
+* ajout description du blog
+* ajout configurateur pour barre de menu (simplemenu/aucun) + largeur (large/étroit)
+* correction connerie de renommage de simpleMenu ! ou l'art de faire chier le monde sans communiquer
+
 v1.5 - 24-02-2016 - Pierre Van Glabeke
 * modif css (merci à Mirovinben pour les mediaqueries)
 * ajout breadcrumb

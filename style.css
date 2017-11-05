@@ -8,6 +8,7 @@
 #
 # ***** END LICENSE BLOCK *****
 */
+@import url(screen.css);
 
 body {
   margin : 0;
@@ -58,24 +59,22 @@ pre {
   border-top : 1px dotted #ccc;
 }
 #top {
-  width : 480px;
-  margin : 0 auto;
-  padding : 0 0 0 0;
+  margin : 0 auto 60px;
+  padding : 0 0 60px;
+  border-bottom : 1px dashed #d6e3ec;
 }
 #top h1 {
-  margin : 0 0 60px 0;
-  padding : 60px 0;
-  border-bottom : 1px dashed #d6e3ec;
+  padding : 60px 0 0;
 }
 #top h1 a {
   text-decoration : none;
   color : #322;
 }
+#top #blogDescription { margin:0; }
 #prelude {
   position : absolute;
-  left : 0;
-  top : 0;
-  visibility : hidden;
+  left : 10px;
+  top : -50px;
 }
 #wrapper {
   width : 100%;
@@ -84,14 +83,12 @@ pre {
   margin-bottom : 1px;
 }
 #main {
-  width : 480px;
   margin : 0 auto;
   padding : 0;
 }
 #content {
   margin : 0;
   padding : 0 0 60px 0;
-  width : 460px;
   float : left;
 }
 #content-info,
@@ -263,7 +260,6 @@ pre {
   cursor : pointer;
 }
 #sidebar {
-  width : 480px;
   clear : both;
   margin : 0 auto;
   padding : 0;
@@ -273,7 +269,6 @@ pre {
   border-bottom : 1px dotted #ddd;
 }
 #sidebar #blognav, #sidebar #blogextra {
-  width : 240px /*100%*/;
   float : left;
   border-top : 3px double;
   margin : 0;
@@ -400,24 +395,24 @@ pre {
   color : #fff;
 }
 #footer p {
-  width : 480px;
   margin : 0 auto;
   padding : 0;
+  text-align:center;
 }
 
-.calendar table{
+.calendar table, .eventhandler-calendar table {
 	font-size: 9px;
 	text-align: center;
 	margin: 0;
 	border-collapse: collapse;
 }
 
-.calendar table caption{
+.calendar table caption, .eventhandler-calendar table caption {
 	margin: 0 auto;
 	padding: 4px 0 4px 5px;
 }
 
-.calendar table th {
+.calendar table th, .eventhandler-calendar table th {
 	color: #333333;
 	background: transparent;
 	border: none !important;
@@ -425,19 +420,17 @@ pre {
 	padding:4px 2px;
 }
 
-.calendar table tr {
+.calendar table tr, .eventhandler-calendar table tr {
 	border: none !important;
 }
 
-.calendar table td {
-	/*width: 14%;
-	line-height: 2em;*/
+.calendar table td, .eventhandler-calendar table td {
 	border: 0.1em solid #EEE;
 	padding:4px 2px;
 	text-align: center;
 }
 
-.calendar table td a {
+.calendar table td a, .eventhandler-calendar table td a {
 	display: block;
 	background: #F7DFE6;
 	color: #0273b9;
@@ -445,7 +438,7 @@ pre {
 	text-decoration: none;
 }
 
-.calendar table td a:hover {
+.calendar table td a:hover, .eventhandler-calendar table td a:hover {
 	background: #0273b9;
 	color: #F7DFE6;
 }

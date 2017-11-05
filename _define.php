@@ -13,10 +13,10 @@ $this->registerModule(
 	/* Name */			    "Time Flies",
 	/* Description*/		"Minimal Theme",
 	/* Author */			  "David Yim, Pierre Van Glabeke",
-	/* Version */			  '1.5',
+	/* Version */			  '1.6',
 	array(
 		'type' =>			'theme',
 		'tplset' => 'mustek',
-		'dc_min' => '2.8'
+		'dc_min' => '2.9'
 	)
 );
