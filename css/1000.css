@@ -1,0 +1,20 @@
+/*
+# ***** BEGIN LICENSE BLOCK *****
+#
+#  	Time Flies
+#  	Theme by David Yim
+#   Contributor : Pierre Van Glabeke
+#   License : http://creativecommons.org/licenses/by-sa/2.0/fr/
+#
+# ***** END LICENSE BLOCK *****
+*/
+#top, #main, #sidebar, #footer p {
+  width : 1000px;
+}
+#content {
+  width : 980px;
+}
+#sidebar #blognav, #sidebar #blogextra {
+  width : 500px;
+}
+#comment-form .field textarea {width:980px;}

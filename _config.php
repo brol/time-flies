@@ -10,20 +10,20 @@
 
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
-global $core;
+dcCore::app();
 
 //PARAMS
 
 # Translations
-l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
+l10n::set(__DIR__ . '/locales/' . dcCore::app()->lang . '/main');
 
 # Default values
 $default_menu = 'simplemenu';
-$default_width = 'large';
+$default_width = '760';
 
 # Settings
-$my_menu = $core->blog->settings->themes->timeflies_menu;
-$my_width = $core->blog->settings->themes->timeflies_width;
+$my_menu = dcCore::app()->blog->settings->themes->timeflies_menu;
+$my_width = dcCore::app()->blog->settings->themes->timeflies_width;
 
 # Menu type
 $timeflies_menu_combo = array(
@@ -33,8 +33,9 @@ $timeflies_menu_combo = array(
 
 # Width type
 $timeflies_width_combo = array(
-	__('Tight') => 'tight',
-	__('Large') => 'large'
+	__('480') => '480',
+	__('760') => '760',
+	__('1000') => '1000'
 );
 
 
@@ -44,7 +45,7 @@ if (!empty($_POST))
 {
 	try
 	{
-		$core->blog->settings->addNamespace('themes');
+		dcCore::app()->blog->settings->addNamespace('themes');
 
 		# Menu type
 		if (!empty($_POST['timeflies_menu']) && in_array($_POST['timeflies_menu'],$timeflies_menu_combo))
@@ -56,7 +57,7 @@ if (!empty($_POST))
 			$my_menu = $default_menu;
 
 		}
-		$core->blog->settings->themes->put('timeflies_menu',$my_menu,'string','Menu to display',true);
+		dcCore::app()->blog->settings->themes->put('timeflies_menu',$my_menu,'string','Menu to display',true);
 
 		# Width type
 		if (!empty($_POST['timeflies_width']) && in_array($_POST['timeflies_width'],$timeflies_width_combo))
@@ -68,19 +69,19 @@ if (!empty($_POST))
 			$my_width = $default_width;
 
 		}
-		$core->blog->settings->themes->put('timeflies_width',$my_width,'string','Width to display',true);
+		dcCore::app()->blog->settings->themes->put('timeflies_width',$my_width,'string','Width to display',true);
 
 		// Blog refresh
-		$core->blog->triggerBlog();
+		dcCore::app()->blog->triggerBlog();
 
 		// Template cache reset
-		$core->emptyTemplatesCache();
+		dcCore::app()->emptyTemplatesCache();
 
 		dcPage::success(__('Theme configuration has been successfully updated.'),true,true);
 	}
 	catch (Exception $e)
 	{
-		$core->error->add($e->getMessage());
+		dcCore::app()->error->add($e->getMessage());
 	}
 }
 

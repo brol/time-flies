@@ -1,14 +1,15 @@
 # Language: Français
-# Module: time-flies - 1.6
-# Date: 2017-11-05 16:30:20
-# Translated with translater 2017.05.10
+# Module: time-flies - 1.7
+# Date: 2022-12-26 14:56:26
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.22
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: time-flies 1.6\n"
+"Project-Id-Version: time-flies 1.7\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-11-05T16:30:20+00:00\n"
+"PO-Revision-Date: 2022-12-26T14:56:26+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"

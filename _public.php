@@ -10,27 +10,27 @@
 
 if (!defined('DC_RC_PATH')) { return; }
 
-l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/public');
+l10n::set(dirname(__FILE__) . '/locales/' . dcCore::app()->lang. '/public');
 
-$core->addBehavior('publicHeadContent','timefliesPublicHeadContent');
+dcCore::app()->addBehavior('publicHeadContent','timefliesPublicHeadContent');
 
-function timefliesPublicHeadContent($core)
+function timefliesPublicHeadContent()
 {
     # appel css menu
-	$style = $core->blog->settings->themes->timeflies_menu;
-	if (!preg_match('/^simplemenu|nomenu$/',$style)) {
+	$style = dcCore::app()->blog->settings->themes->timeflies_menu;
+	if (!preg_match('/^simplemenu|nomenu$/', (string) $style)) {
 		$style = 'nomenu';
 	}
 
-	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
+	$theme_url = dcCore::app()->blog->settings->system->themes_url.'/'.dcCore::app()->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/".$style.".css\" />\n";
 
     # appel css menu
-	$style = $core->blog->settings->themes->timeflies_width;
-	if (!preg_match('/^tight|large$/',$style)) {
-		$style = 'tight';
+	$style = dcCore::app()->blog->settings->themes->timeflies_width;
+	if (!preg_match('/^480|760|1000$/', (string) $style)) {
+		$style = '760';
 	}
 
-	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
+	$theme_url = dcCore::app()->blog->settings->system->themes_url.'/'.dcCore::app()->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/".$style.".css\" />\n";
 }

@@ -1,37 +1,30 @@
 # Language: Français
-# Module: time-flies - 1.6
-# Date: 2017-11-05 16:30:20
-# Translated with translater 2017.05.10
+# Module: time-flies - 1.7
+# Date: 2022-12-26 14:56:26
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.22
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: time-flies 1.6\n"
+"Project-Id-Version: time-flies 1.7\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-11-05T16:30:20+00:00\n"
+"PO-Revision-Date: 2022-12-26T14:56:26+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _config.php:36
-msgid "Tight"
-msgstr "Etroit"
-
-#: _config.php:37
-msgid "Large"
-msgstr "Large"
-
-#: _config.php:91
+#: _config.php:92
 msgid "Customizations"
 msgstr "Personnalisations"
 
-#: _config.php:92
+#: _config.php:93
 msgid "Menu to display:"
 msgstr "Menu à afficher :"
 
-#: _config.php:98
+#: _config.php:99
 msgid "Display width:"
 msgstr "Largeur à afficher :"
 

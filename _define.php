@@ -7,16 +7,17 @@
 #   License : http://creativecommons.org/licenses/by-sa/2.0/fr/
 #
 # ***** END LICENSE BLOCK *****
-if (!defined('DC_RC_PATH')) { return; }
-
+if (!defined('DC_RC_PATH')) {
+    return;
+}
 $this->registerModule(
-	/* Name */			    "Time Flies",
-	/* Description*/		"Minimal Theme",
-	/* Author */			  "David Yim, Pierre Van Glabeke",
-	/* Version */			  '1.6.1',
-	array(
-		'type' =>			'theme',
-		'tplset' => 'mustek',
-		'dc_min' => '2.9'
-	)
+    'Time Flies',
+    'Minimal Theme',
+    'David Yim, Pierre Van Glabeke',
+    '1.7',
+    [
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
+        'tplset'   => 'mustek',
+    ]
 );

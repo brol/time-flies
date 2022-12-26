@@ -1,3 +1,7 @@
+v1.7 - 26-12-2022 - Pierre Van Glabeke
+* màj dc2.24
+* modifs html et css
+
 v1.6.1 - 05-11-2017 - Pierre Van Glabeke
 * modif localisation
 
@@ -6,7 +10,6 @@ v1.6 - 04-11-2017 - Pierre Van Glabeke
 * modifs localisation
 * ajout description du blog
 * ajout configurateur pour barre de menu (simplemenu/aucun) + largeur (large/étroit)
-* correction connerie de renommage de simpleMenu ! ou l'art de faire chier le monde sans communiquer
 
 v1.5 - 24-02-2016 - Pierre Van Glabeke
 * modif css (merci à Mirovinben pour les mediaqueries)
