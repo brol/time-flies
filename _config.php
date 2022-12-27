@@ -7,10 +7,7 @@
 #   License : http://creativecommons.org/licenses/by-sa/2.0/fr/
 #
 # ***** END LICENSE BLOCK *****
-
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
-
-dcCore::app();
 
 //PARAMS
 
