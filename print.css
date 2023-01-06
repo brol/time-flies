@@ -1,15 +1,14 @@
-/* -----------------------------------------------------------------------
-
-
- Blueprint CSS Framework 0.8
- http://blueprintcss.org
-
-   * Copyright (c) 2007-Present. See LICENSE for more info.
-   * See README for instructions on how to use Blueprint.
-   * For credits and origins, see AUTHORS.
-   * This is a compressed file. See the sources in the 'src' directory.
-
------------------------------------------------------------------------ */
+/**
+ * @brief time-flies, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author David Yim
+ *
+ * @contributeur Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-sa/2.0/fr/
+ */
 
 /* print.css */
 body {line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:none;font-size:10pt;}

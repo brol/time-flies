@@ -1,13 +1,14 @@
-/*
-# ***** BEGIN LICENSE BLOCK *****
-#
-#  	Time Flies
-#  	Theme by David Yim
-#   Contributor : Pierre Van Glabeke
-#   License : http://creativecommons.org/licenses/by-sa/2.0/fr/
-#
-# ***** END LICENSE BLOCK *****
-*/
+/**
+ * @brief time-flies, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author David Yim
+ *
+ * @contributeur Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-sa/2.0/fr/
+ */
 @import url(screen.css);
 
 body {
@@ -114,7 +115,7 @@ pre {
   color : #322;
   border-bottom : 1px dotted #d6e3ec;
 }
-.post-info {
+.post-info, .page-info {
   font-size : 0.8em;
   padding : 0;
   font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
@@ -123,7 +124,7 @@ pre {
   margin-left : -30px;
   padding-left : 30px;
 }
-.post-info a {
+.post-info a, .page-info a {
   color : #355;
   font-style : italic;
   border-bottom : 1px dotted #d6e3ec;
