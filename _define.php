@@ -17,9 +17,9 @@ $this->registerModule(
     'Time Flies',
     'Minimal Theme',
     'David Yim, Pierre Van Glabeke',
-    '1.7.1',
+    '1.7.2',
     [
-        'requires' => [['core', '2.24']],
+        'requires' => [['core', '2.26']],
         'type'     => 'theme',
         'tplset'   => 'mustek',
     ]

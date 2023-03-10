@@ -1,3 +1,7 @@
+v1.7.2 - 10/03/2023 - Pierre Van Glabeke
+* modifs html et css
+* dc2.26 requis
+
 v1.7.1 - 07/01/2023 - Pierre Van Glabeke
 * correction bug configurateur
 
